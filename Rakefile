@@ -6,12 +6,12 @@ end
 namespace :db
   desc 'migrates the objects'
   task :migrate do
-    require_relative
+    require_relative ''
   end
 
   desc 'seeds the table'
   task :seed do
-    require_relative ./db/seeds.rb
+    require_relative './db/seeds.rb'
   end
 end
 
