@@ -3,7 +3,7 @@ task :hello do
   puts "hello from Rake!"
 end
 
-desc 'loads the environment '
+desc 'loads the environment'
 task :environment do
   require_relative './config/environment'
 end
@@ -18,7 +18,7 @@ namespace :db do
   task :migrate => :environment do
     Student.create_table
   end
-  
+
   desc 'seed the database with some dummy data'
   task :seed do
     require_relative './db/seeds.rb'
