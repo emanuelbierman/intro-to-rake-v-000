@@ -3,7 +3,7 @@ task :hello do
   puts "hello from Rake!"
 end
 
-namespace :db
+namespace :db do
   desc 'migrates the objects'
   task :migrate do
     require_relative ''
