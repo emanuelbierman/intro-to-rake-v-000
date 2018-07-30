@@ -4,14 +4,14 @@ task :hello do
 end
 
 namespace :db
-  desc 'migrates'
-  task :migrate do 
-    require_relative 
+  desc 'migrates the date'
+  task :migrate do
+    require_relative
   end
 
   desc 'seeds the '
-  task :seed do 
-    require_relative 
+  task :seed do
+    require_relative
   end
 end
 
